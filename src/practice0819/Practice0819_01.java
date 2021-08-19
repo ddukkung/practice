@@ -38,6 +38,7 @@ public class Practice0819_01 {
 		// 마찬가지로 객체를 생성하지 못하므로 ofPattern() 메서드를 바로 호출해서 사용
 		
 		System.out.println(now2.format(dtf));
+		
 	}
 
 }
