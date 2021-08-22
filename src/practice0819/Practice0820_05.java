@@ -85,7 +85,8 @@ public class Practice0820_05 {
 			String formatStr6 = MessageFormat.format(messagePattern, st2.nextToken(), st2.nextToken(), st2.nextToken());
 			System.out.println(formatStr6);
 		}
-				
+		
+		// git test
 		
 	}
 
