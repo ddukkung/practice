@@ -1,4 +1,4 @@
-package Practice0823;
+package practice0823;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
