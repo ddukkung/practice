@@ -72,6 +72,7 @@ class MyWindowListener implements WindowListener {
 	public void windowClosing(WindowEvent arg0) {
 		// 맨 마지막 프로그램이 종료될 때 닫기 버튼을 클릭하면 호출되는 메서드
 		System.out.println("windowClosing");
+		System.exit(0); // 프로그램 종료(0 : 정상 종료, 0 이외의 값 : 비정상 종료)
 	}
 
 	@Override
