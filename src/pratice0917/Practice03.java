@@ -40,8 +40,12 @@ public class Practice03 {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println(tf.getText());
-				tf.setText("");
+//				System.out.println(tf.getText()); // 텍스트 가져오기
+//				tf.setText(""); // 널스트링 값 설정 = 입력된 텍스트 초기화
+//				
+//				// 입력 작업 완료 후 텍스트 초기화 끝난 뒤 다시 입력을 위해 커서 요청할 경우
+//				tf.requestFocus();
+				printMessage();
 			}
 		});
 		
@@ -50,8 +54,12 @@ public class Practice03 {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println(tf.getText());
-				tf.setText("");
+//				System.out.println(tf.getText()); // 텍스트 가져오기
+//				tf.setText(""); // 널스트링 값 설정 = 입력된 텍스트 초기화
+//				
+//				// 입력 작업 완료 후 텍스트 초기화 끝난 뒤 다시 입력을 위해 커서 요청할 경우
+//				tf.requestFocus();
+				printMessage();
 			}
 		});
 		
@@ -60,6 +68,13 @@ public class Practice03 {
 	}
 	
 	// JTextField에 입력된 텍스트를 가져와서 출력하는 메서드 정의 
+	public void printMessage() {
+		// JTextField에 입력된 텍스트를 가져와서 출력 후 텍스트 초기화
+		// 입력 작업 완료 후 텍스트 초기화 끝난 뒤 다시 입력을 위해 커서를 JTextField로 이동
+		System.out.println(tf.getText());
+		tf.setText("");
+		tf.requestFocus();
+	}
 
 	public static void main(String[] args) {
 		
